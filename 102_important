@@ -7,3 +7,5 @@ app热更新
 打包安装
 
 theme
+process.env
+secrets variables

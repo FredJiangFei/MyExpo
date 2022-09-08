@@ -1,4 +1,4 @@
-### Build schema for eas.json 每个Property的描述
+### Build schema for eas.json 每个Property的描述 #############################################################
     {
         "build": {
             "base": {
@@ -62,7 +62,7 @@
 
 ### Using private npm packages
 
-### Environment variables and secrets
+### Environment variables and secrets #############################################################
     Environment variables in Expo
         Using app manifest extra
             app.config.js
@@ -98,6 +98,8 @@
     100 app-specific secrets for each app (指定app用)
 
 ### Secrets on the Expo website
+
+### Common questions #############################################################
     1. Can I share environment variables defined in eas.json with expo start and eas update?
     >>>> eas.json
     {
@@ -129,4 +131,41 @@
     }
     >>>> API_URL=https://api.staging.com ENABLE_HIDDEN_FEATURES=1 eas update
     
-    Move values to application code and switch based on channel.
+        <1> Move values to application code and switch based on channel.
+        <2> Use a single environment variable to toggle configuration. 
+
+    2. How are naming collisions between secrets and the env field in eas.json handled?
+    3. How do environment variables work for my Expo Development Client builds?
+    4. Can I just set my environment variables on a CI provider?
+
+### Building APKs for Android emulators and devices
+
+### Building for iOS simulators
+
+### App version management #############################################################
+    ### app store 版本
+        version
+
+    ### 开发构建版本
+        android.versionCode
+        ios.buildNumber
+
+    ### 不改版本导致发布拒绝
+        a duplicate version number will cause app store rejection
+
+    ### version map
+    
+    eas.json
+        "cli": {
+            "appVersionSource": "remote" / "local"
+        },
+        EAS stores version information scoped by 
+            account, 
+            slug, 
+            platform, 
+            application ID/bundle identifier
+    Recommended workflow
+
+### Troubleshooting build errors and crashes
+
+### Installing app variants on the same device
