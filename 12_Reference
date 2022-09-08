@@ -169,3 +169,15 @@
 ### Troubleshooting build errors and crashes
 
 ### Installing app variants on the same device
+
+### iOS Capabilities / iOS entitlements ?????
+
+### Running builds on your own infrastructure
+    eas build --local
+
+### Caching dependencies
+    缓存项目依赖，减少打包时间
+
+### Android build process
+### iOS build process
+..........................
