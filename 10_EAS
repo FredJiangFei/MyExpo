@@ -1,0 +1,5 @@
+### Internal distribution
+    Setting up internal distribution
+        https://docs.expo.dev/build/internal-distribution/#setting-up-internal-distribution
+        1. Configure a build profile / eas.json
+        2. Configure app signing

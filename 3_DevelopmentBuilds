@@ -1,0 +1,25 @@
+### Getting Started
+    Creating and installing your first development build
+        expo install expo-dev-client
+        ### IOS
+            eas device:create
+            eas build --profile development --platform ios
+        ### Android
+            eas build --profile development --platform android
+
+### Developing your app
+    expo start --dev-client
+
+### The launcher screen
+
+### Customizing your runtime
+    1. add library
+    2. register plugin in app.json, require permission
+
+### Creating Development Builds
+    With EAS
+        eas build:configure / eas.json
+    Locally with Xcode and Android Studio
+
+### Development Workflows
+    
