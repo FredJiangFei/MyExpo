@@ -1,0 +1,15 @@
+### Account Types
+    Personal Account
+
+    Organization Account
+        project share with other memebers
+        role privileges: https://docs.expo.dev/accounts/working-together/#managing-access
+
+    Team Account (deprecated)
+
+### Two-Factor Authentication
+
+
+### Programmatic Access
+    Personal Account: Personal Access Tokens
+    Organizations: Bot Users & Access Tokens

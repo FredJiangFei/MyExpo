@@ -1,0 +1,70 @@
+### Routing & Navigation
+    https://github.com/react-navigation/react-navigation/tree/main/example
+    tabs, navigation bar, screen transition animations and gestures, drawers
+
+### Permissions
+    iOS
+        app.json > expo.ios.infoPlist
+    Android
+        app.json > expo.android.permissions
+
+### Authentication
+    AuthSession API
+        https://docs.expo.dev/versions/latest/sdk/auth-session/
+
+    Guides
+        AuthSession can be used for any OAuth or OpenID Connect provider: Apple / Facebook / Google
+
+    Redirect URI patterns ???????????
+
+    Improving User Experience
+        Warming the browser
+        Implicit login
+            request an access token without the client secret
+        Storing data
+            expo-secure-store (This is different to AsyncStorage which is not secure)
+
+### Environment variables in Expo
+    私密数据存储
+    切换test/prod API url
+
+### Customizing Metro https://docs.expo.dev/guides/customizing-metro/  https://facebook.github.io/metro/docs/configuration/
+    Expo CLI uses Metro to bundle JavaScript for Android and iOS platforms
+    metro.config.js
+
+### Progressive Web Apps
+    a website that can be installed on the user's device and used offline
+
+### Web Performance
+
+
+### Delaying Your Code To Run Later
+    foreground
+    background
+
+### Error Handling 
+    Fatal JavaScript errors
+        In Development: 
+        In Production: 
+
+### Testing with Jest
+
+### Linking ??????????????????????????????????
+    Linking from your app
+        import * as Linking from 'expo-linking';
+        Linking.openURL('https://expo.dev');
+
+### Deep linking ??????????????????????????????????
+
+### Setting up Continuous Integration (CI / CD)
+
+### Config Plugins
+
+
+### Sharing pre-release versions of your app
+    Expo Go
+    Internal Distribution
+    TestFlight
+
+### Using Hermes Engine
+    a JavaScript engine optimized for React Native

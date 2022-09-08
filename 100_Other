@@ -4,7 +4,7 @@ https://docs.expo.dev/guides/typescript/#advanced-types
 ### Snack
 https://snack.expo.dev/
 
-### ngrok
+### ngrok / allows devices outside of your LAN to access the above servers without you needing to change your firewall settings
 npm i -g @expo/ngrok
 npx expo start --tunnel
 

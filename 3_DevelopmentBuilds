@@ -16,10 +16,24 @@
     1. add library
     2. register plugin in app.json, require permission
 
-### Creating Development Builds
+###### Creating Development Builds ##################################################################
     With EAS
         eas build:configure / eas.json
     Locally with Xcode and Android Studio
+###### Creating Development Builds ##################################################################
 
-### Development Workflows
-    
+### Development Workflows...............
+    Tools
+        Tunnel URLs
+            npx expo start --tunnel 公网测试
+
+
+### Extensions
+    Extending the dev menu
+        import { registerDevMenuItems } from 'expo-dev-menu';
+    EAS Updates / The EAS Updates extension provides the ability to view and load published updates in your development client.
+        Configure EAS Update / https://docs.expo.dev/eas-update/getting-started/
+
+### Compatibility
+    Expo SDKs
+### Upgrading
