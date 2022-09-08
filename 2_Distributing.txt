@@ -10,7 +10,7 @@
 ### Submitting to the Google Play Store
 	https://docs.expo.dev/submit/android/
 
-### App Store Best Practices
+########################### App Store Best Practices #########################################################
 	Version app
 		https://docs.expo.dev/build-reference/app-versions/
 		version/android.versionCode/ios.buildNumber
@@ -27,3 +27,47 @@
 			https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW1
 		Android
 	App Icon
+        Configuring your App's Icon / app.json / ios.icon / android.icon
+    Splash Screen
+        SplashScreen API / https://docs.expo.dev/versions/latest/sdk/splash-screen/
+        app.json / config Splash Screen background
+            splash.resizeMode
+            splash.backgroundColor
+        Make a splash image
+            iOS
+                iOS Human Interface Guidelines: https://developer.apple.com/design/human-interface-guidelines/foundations/layout#specifications
+            Android
+                https://material.io/resources/devices/
+    Status Bar
+        Configuring the status bar while your app is loading (Android only)
+            app.json / androidStatusBar / barStyle.....
+
+        Updating the status bar while your app is running
+            import { StatusBar } from 'expo-status-bar';
+
+        Themes and status bar styles   
+            style="auto" / style="light" / style="dark"
+    App Review guidelines
+        https://developer.apple.com/app-store/review/
+
+### Responsive design
+    确保在iPad上测试，否则可能会被Apple拒绝
+
+### Privacy Policy
+    Starting October 3, 2018, iOS apps required to have a privacy policy in order to pass the App Store Review Guidelines
+    Warnings from Google if app does not have a privacy policy
+
+### App privacy questions
+    https://developer.apple.com/app-store/app-privacy-details/
+
+### Localizing your iOS app
+
+########################### App Store Best Practices #########################################################
+
+
+### Runtime Versions ???????????????????????????????????????????
+    runtimeVersion / https://docs.expo.dev/versions/latest/config/app/#runtimeversion
+
+    ### Setting the runtime version for an update
+
+### 

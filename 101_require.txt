@@ -1,0 +1,4 @@
+访问user的设备敏感信息，需要申请权限，否则app会被拒绝发布
+确保在iPad上测试，否则可能会被Apple拒绝
+Starting October 3, 2018, iOS apps required to have a privacy policy in order to pass the App Store Review Guidelines
+Warnings from Google if app does not have a privacy policy
