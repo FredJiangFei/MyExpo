@@ -1,0 +1,63 @@
+### Build schema for eas.json 每个Property的描述
+    {
+        "build": {
+            "base": {
+                "node": "12.13.0",
+                "yarn": "1.22.5",
+                "env": {
+                    "EXAMPLE_ENV": "example value"
+                },
+                "android": {
+                    "image": "default",
+                    "env": {
+                    "PLATFORM": "android"
+                    }
+                },
+                "ios": {
+                    "image": "latest",
+                    "env": {
+                    "PLATFORM": "ios"
+                    }
+                }
+            },
+            "development": {
+                "extends": "base",
+                "developmentClient": true,
+                "env": {
+                    "ENVIRONMENT": "development"
+                },
+                "android": {
+                    "distribution": "internal",
+                    "withoutCredentials": true
+                },
+                "ios": {
+                    "simulator": true
+                }
+            },
+            "staging": {
+                "extends": "base",
+                "env": {
+                    "ENVIRONMENT": "staging"
+                },
+                "distribution": "internal",
+                "android": {
+                    "buildType": "apk"
+                }
+            },
+            "production": {
+                "extends": "base",
+                "env": {
+                    "ENVIRONMENT": "production"
+                }
+            }
+        }
+    }
+### Migrating from "expo build"
+
+### Build lifecycle hooks
+    five EAS Build lifecycle npm hooks that you can set in your package.json
+
+### Integrating with third-party tooling
+    How to set up EAS Build with a monorepo
+
+### Using private npm packages
