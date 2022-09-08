@@ -1,0 +1,16 @@
+### us TS
+https://docs.expo.dev/guides/typescript/#advanced-types
+
+### Snack
+https://snack.expo.dev/
+
+### ngrok
+npm i -g @expo/ngrok
+npx expo start --tunnel
+
+### Price
+https://expo.dev/pricing
+
+### EAS / Apple App Store / Google Play Store
+https://docs.expo.dev/build/setup/
+
