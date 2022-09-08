@@ -61,3 +61,72 @@
     How to set up EAS Build with a monorepo
 
 ### Using private npm packages
+
+### Environment variables and secrets
+    Environment variables in Expo
+        Using app manifest extra
+            app.config.js
+                COOLAPP_COMMENTS=true npx expo start
+                module.exports = {
+                    name: 'CoolApp',
+                    version: '1.0.0',
+                    extra: {
+                    enableComments: process.env.COOLAPP_COMMENTS === 'true',
+                    },
+                };
+            code
+                import Constants from 'expo-constants';
+                export const Post = ({ enableComments = Constants.manifest.extra.enableComments || false }) => (
+                <>
+                    <Text>...</Text>
+                    {enableComments && <Comments />}
+                </>
+                );
+    Using a dotenv file
+        https://github.com/motdotla/dotenv
+    
+    Security considerations
+        Never store sensitive secrets in your environment variables.
+
+### Using plaintext environment variables
+
+### Built-in environment variables
+
+### Using secrets in environment variables
+    The secret values are encrypted, and are only decrypted in a secure environment by EAS servers
+    100 account-wide secrets for each Expo account (account下所有app用)
+    100 app-specific secrets for each app (指定app用)
+
+### Secrets on the Expo website
+    1. Can I share environment variables defined in eas.json with expo start and eas update?
+    >>>> eas.json
+    {
+        "build": {
+          "production": {
+            "channel": "production",
+            "env": {
+              "API_URL": "https://api.production.com",
+              "ENABLE_HIDDEN_FEATURES": 0
+            }
+          },
+          "preview": {
+            "channel": "staging",
+            "env": {
+              "API_URL": "https://api.staging.com",
+              "ENABLE_HIDDEN_FEATURES": 1
+            }
+          }
+        }
+      }
+    >>>> app.config.js
+    export default {
+        // ...
+        extra: {
+            // Fall back to development URL when not set
+            apiUrl: process.env.API_URL ?? 'https://localhost:3000'
+            enableHiddenFeatures: process.env.ENABLE_HIDDEN_FEATURES ? Boolean(process.env.ENABLE_HIDDEN_FEATURES) : true,
+        }
+    }
+    >>>> API_URL=https://api.staging.com ENABLE_HIDDEN_FEATURES=1 eas update
+    
+    Move values to application code and switch based on channel.
