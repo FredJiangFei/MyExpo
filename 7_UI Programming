@@ -1,4 +1,68 @@
 ### Assets
     Images, fonts, videos, sounds
+    Local assets
+        useAssets
+            You can load assets before your app starts with the useAssets hook.
+    Remote assets
+    Optimization
+        Images
+        Fonts
+    
+### Icons
+    @expo/vector-icons
 
-### Local assets
+### Custom Icon Fonts
+    Getting a font https://rsms.me/inter/
+    ./assets/fonts
+    Supported font formats
+        OTF and TTF
+
+### Icon images
+    <Image
+        source={require('./assets/splash.png')}
+        fadeDuration={0}
+        style={{ width: 50, height: 50 }}
+    />
+    icon.png
+    icon@2x.png 
+    icon@3x.png
+
+### Button Component
+    FontAwesome.Button
+
+### App Icons
+    https://docs.expo.dev/guides/app-icons/
+
+
+### Splash Screen
+### Status Bar
+
+### Light and Dark modes
+    app.json > userInterfaceStyle
+
+### Detecting the color scheme
+    import { Appearance, useColorScheme } from 'react-native';
+
+
+### Setting a component's background image
+    ImageBackground
+
+### Implementing a checkbox for Expo and React Native apps
+### Stacking views with zIndex
+
+### Using SVGs......
+    Exporting an SVG
+
+### How to display a popup toast
+
+### Styling a React Native button
+     <Pressable />
+
+### User Interface Component Libraries
+    React Native Paper, and their docs
+    React Native UI Lib, and their docs
+    React Native Elements, and their docs
+    NativeBase, and their docs
+    React Native UI Kitten, and their docs
+    React Native iOS Kit, and their docs
+    Fluent UI, and their docs

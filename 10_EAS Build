@@ -1,0 +1,23 @@
+
+### EAS Build 打包项目
+
+### Creating your first build
+    1. Install the latest EAS CLI
+    2. Log in to your Expo account
+    3. Configure the project
+    4. Run a build
+    5. Wait for the build to complete
+    6. Deploy the build
+
+### EAS Build Limitations
+    12GB RAM memory and CPU limits
+    limit 2 hours to run
+    SDK 41 以下不支持
+    
+### Configuring EAS Build with eas.json
+
+### Internal distribution
+    Setting up internal distribution
+        https://docs.expo.dev/build/internal-distribution/#setting-up-internal-distribution
+        1. Configure a build profile / eas.json
+        2. Configure app signing
