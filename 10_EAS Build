@@ -3,10 +3,22 @@
 
 ### Creating your first build
     1. Install the latest EAS CLI
+        npm install -g eas-cli
+
     2. Log in to your Expo account
+        eas login
+
     3. Configure the project
+        eas build:configure
+
     4. Run a build
+        eas build --platform android
+        eas build --platform ios
+        eas build --platform all
+
     5. Wait for the build to complete
+        eas build:list
+        
     6. Deploy the build
 
 ### EAS Build Limitations
@@ -109,6 +121,9 @@
     Setting up internal distribution
         https://docs.expo.dev/build/internal-distribution/#setting-up-internal-distribution
         1. Configure a build profile / eas.json
+            Android
+            IOS 
+                available for all paid Apple Developer accounts. not available for free accounts
         2. Configure app signing
         3. Run a build with the internal build profile
         4. Installing and running the build
