@@ -1,2 +1,10 @@
 ### Webhooks
     EAS 通过 Webhook 告诉你当build或submission 完成
+
+eas build:configure
+eas device:create
+expo install expo-dev-client
+eas build --profile development --platform ios
+
+eas build
+eas submit

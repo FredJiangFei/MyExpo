@@ -1,14 +1,13 @@
 ### a service that allows you to deliver small bug fixes and updates to your users immediately
+    Native layer: built into the app's binary (Cannot change with update)
+        App config
+        app icon
+        splash
+        native code inside the binary
 
-Native layer: built into the app's binary
-    App config
-    app icon
-    splash
-    native code inside the binary
-
-Update layer, swappable with other compatible updates
-    JS / TS code
-    image assets
+    Update layer, swappable with other compatible updates (Can change with update)
+        JS / TS code
+        image assets
 
 ### Conceptual overview
 
