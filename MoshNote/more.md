@@ -1,2 +1,2 @@
 expo-permissions
-Debugge
+Debugger

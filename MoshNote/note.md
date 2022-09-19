@@ -111,7 +111,46 @@
 
     Network
     Cache data
-    Cache image
+    Cache image(fastimage)
     Notication
 
+### Auth
+
+    https://lottiefiles.com/
+    AppLoading
+
+### Notification
+
+    online
+        token
+        send
+        receive
+        test: https://expo.dev/notifications
+    local
+
 ### Publish
+
+    App Icon
+        PNG
+        1024 * 1024
+        Follow Apple / Android Guidelines
+        app.json
+    optimize assets
+        sharp-cli > expo-optimize
+    error report
+        Sentry
+        BugSang
+    publish
+        expo publish
+        app.json > privacy: unlisted
+    standalone app
+        EAS
+        IOS
+            apple developer account
+            app.json > ios
+                supportsTablet
+                buildNumber
+                ...
+            reduce size of app => reject
+            distribute to Apple Store
+        Android
