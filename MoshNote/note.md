@@ -151,6 +151,12 @@
                 supportsTablet
                 buildNumber
                 ...
+            expo build:ios
             reduce size of app => reject
             distribute to Apple Store
         Android
+            app.json
+                package
+                versionCode
+            expo build:android
+    over-the-air update
