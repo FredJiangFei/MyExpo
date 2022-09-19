@@ -1,6 +1,12 @@
 ### Push Notifications Overview
-    Setup: getting a user's Expo Push Token
-    Sending: calling Expo's Push API with the token when you want to send a notification
-    Receiving: responding to the notification in your app
+    Setup Expo Push Token
+    Sending notification
+    Receiving notification
 
     Usage code
+
+### Sending Notifications from backend (dotnet)
+
+### Using FCM for Push Notifications
+    Android only
+    Firebase Cloud Messaging
