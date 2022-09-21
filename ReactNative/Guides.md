@@ -44,7 +44,7 @@
     Storing Sensitive Info
         Never store sensitive API keys in your app code.
         Choose the right type of storage
-            Async Storage
+            Async Storage (unsafe)
                 Async Storage is the React Native equivalent of Local Storage from the web
                 DO USE ASYNC STORAGE WHEN...
                     Persisting non-sensitive data across app runs
@@ -59,6 +59,37 @@
                 Android - Secure Shared Preferences
                 Android - Keystore
 
-    Authentication and Deep Linking
-        
+    Deep Linking
+        不安全，不发送敏感信息
     OAuth2 and Redirects
+    Network Security
+        SSL encryption
+        SSL Pinning
+
+### Image
+
+    my-icon.png / my-icon.ios.png / my-icon.android.png
+    check.png / check@2x.png / check@3x.png
+    为了使新的图片资源机制正常工作，require 中的图片名字必须是一个静态字符串, 不能使用变量
+
+    Network Images
+        use https => IOS App Transport Security
+            https://reactnative.dev/docs/publishing-to-app-store#1-enable-app-transport-security
+            <Image source={{uri: 'https://reactjs.org/logo-og.png'}} style={{width: 400, height: 400}} />
+
+    Uri Data Images
+        仅对非常小的图片使用 base64 数据
+        <Image
+            style={{
+                width: 51,
+                height: 51,
+                resizeMode: 'contain'
+            }}
+            source={{
+                uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='
+            }}
+            />
+    Cache Control (iOS Only)
+        cache: 'only-if-cached'
+
+### Handling Touches
