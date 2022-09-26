@@ -124,3 +124,4 @@
     激活回调: 代表某个手势真正被触发了
         onStart；onUpdate；onChange；onEnd。
     系统取消回调
+        onTouchesCancelled
