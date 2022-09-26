@@ -93,3 +93,34 @@
         cache: 'only-if-cached'
 
 ### Handling Touches
+
+    Button
+    Touchable
+        TouchableOpacity
+        TouchableNativeFeedback
+
+### Navigating Between Screens
+
+    React Navigation
+
+### Animations
+
+    Animated
+    LayoutAnimation
+
+### Gesture Responder System
+
+    轻按手势
+        区分 UI 线程和 JavaScript 线程
+    拖拽动效
+    1 + 8
+        Tap
+        Pan
+        LongPress
+        ....
+    通用回调
+        无论哪种手势都会有以上回调，只要用户和相关视图发生了交互行为，即便该手势并未真正触发
+        onBegin；onTouchesDown；onTouchesMove；onTouchesUp；onFinalize。
+    激活回调: 代表某个手势真正被触发了
+        onStart；onUpdate；onChange；onEnd。
+    系统取消回调
