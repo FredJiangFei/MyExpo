@@ -125,3 +125,16 @@
         onStart；onUpdate；onChange；onEnd。
     系统取消回调
         onTouchesCancelled
+
+    手势回调都返回哪些参数
+        常用类回调参数
+            state
+            numberOfPointers
+            x/y、absoluteX/Y 和 changedX/Y 区别
+        场景类回调参数
+            duration(longPress)
+            rotation
+            scale(缩放)
+            allTouches
+    常规手势冲突解决方案
+        捕获冒泡机制
