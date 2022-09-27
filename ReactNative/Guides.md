@@ -138,3 +138,12 @@
             allTouches
     常规手势冲突解决方案
         捕获冒泡机制
+        单视图多手势冲突问题
+            手势竞争
+                Gesture.Race
+                Pan 拖拽手势和 LongPress 长按手势
+            手势同时响应
+                Gesture.Simultaneous
+                Pinch 缩放手势 + Rotation 旋转手势
+            手势优先级
+                Gesture.Exclusive
