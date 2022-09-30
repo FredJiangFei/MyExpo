@@ -30,6 +30,62 @@
         FocusAwareStatusBar
 
 # Opening a modal
+
     screenOptions={{ presentation: 'modal' }}
 
 # Multiple drawers
+
+# Screen options with nested navigators
+
+    Stack.Navigator
+        Home (Tab.Navigator)
+            Feed (Screen)
+            Profile (Screen)
+            Account (Screen)
+        Settings (Screen)
+
+    ***************getFocusedRouteNameFromRoute***********************
+    navigation.setOptions
+
+# Custom Android back button behavior
+
+# Preventing going back
+
+    beforeRemove event
+
+# Call a function when focused screen changes
+
+    focus event
+    useFocusEffect
+    useIsFocused
+
+# Access the navigation prop from any component
+
+    非screen的component接收不到navigation
+    useNavigation
+
+# Navigating without the navigation prop
+
+    Redux navigation
+
+# Deep linking
+
+# Configuring links
+
+# Server rendering
+
+# Screen tracking for analytics
+
+    onReady
+    onStateChange
+
+# Themes
+
+    Built-in themes
+
+# State persistence
+
+    initialState
+    onStateChange
+    Development Mode
+        __DEV__
