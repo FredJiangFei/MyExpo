@@ -169,4 +169,35 @@
     Stack.Group
 
 # Navigation lifecycle
-    
+
+    React Navigation lifecycle events
+        focus
+            useFocusEffect
+            const isFocused = useIsFocused();
+        blur
+
+# Glossary of terms
+
+    Navigator
+        <Stack.Navigator> // <---- This is a Navigator
+            xxxxxxx
+        </Stack.Navigator>
+    Router
+        how to handle actions and state changes in the navigator
+        custom navigator
+    Screen component
+         <Stack.Screen
+            name="Home"
+            component={HomeScreen} // <---- Screen component
+        />
+    Navigation Prop
+        dispatch 
+        navigate
+        goBack
+    Route Prop
+        params, key and name
+    Navigation State (important)
+    Route
+    Header
+# Troubleshooting
+
