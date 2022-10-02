@@ -42,6 +42,12 @@
 
     const isFocused = useIsFocused();
 
-# useLinkTo
+# useLinkTo / useLinkProps / useLinkBuilder
 
     navigate to a screen / using a path / instead of a screen name
+
+# useScrollToTop
+
+# useTheme
+
+    const { colors } = useTheme();
