@@ -1,0 +1,7 @@
+# TouchableHighlight
+
+# TouchableOpacity
+
+# TouchableWithoutFeedback
+
+# Pressable
