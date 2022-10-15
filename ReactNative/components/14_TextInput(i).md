@@ -65,7 +65,7 @@
         文本框是否可编辑
     enablesReturnKeyAutomatically
         在文本框内没有文字的时候禁用确认按钮
-    keyboardType
+# keyboardType
         所有平台都可用：
             default
             number-pad
@@ -117,8 +117,8 @@
     placeholder
     placeholderTextColor
 
-    returnKeyLabel
-    returnKeyType
+# returnKeyLabel(Android)
+# returnKeyType(IOS/Android)
         决定“确定”按钮显示的内容
     
     secureTextEntry

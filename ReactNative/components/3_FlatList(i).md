@@ -5,7 +5,7 @@
         onShowUnderlay ?
         onHideUnderlay ?
     data
-    extraData
+# extraData
     keyExtractor
     ItemSeparatorComponent
     onRefresh
@@ -13,17 +13,17 @@
     refreshing
         加载新数据时， 显示一个正在加载的符号
 
-    horizontal
+# horizontal
         水平布局
-    numColumns ?
+# numColumns ?
         horizontal必须是false
     columnWrapperStyle ?
         当numColumns>1时，作用在每行容器上的样式
 
-    ListEmptyComponent
-    ListFooterComponent
+# ListEmptyComponent
+# ListFooterComponent
     ListFooterComponentStyle
-    ListHeaderComponent
+# ListHeaderComponent
     ListHeaderComponentStyle
 
     initialNumToRender
@@ -32,8 +32,9 @@
     getItemLayout
         优化，只加载范围内的元素
 
-    onEndReached
-    onEndReachedThreshold
+# onEndReached
+# onEndReachedThreshold
+    当距离底部多远时触发onEndReached
 
     inverted
 
@@ -44,8 +45,8 @@
     getScrollResponder()
     getScrollableNode()
     recordInteraction()
-    scrollToEnd()
+# scrollToEnd()
         滚动到底部
-    scrollToIndex()
+# scrollToIndex()
     scrollToItem()
     scrollToOffset()
