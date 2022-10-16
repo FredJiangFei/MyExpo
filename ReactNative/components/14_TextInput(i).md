@@ -10,7 +10,8 @@
         * left
         * center
         * right
-    textContentType
+# textContentType
+        记住账号密码，帮助用户完成快速填写
         none
         URL
         addressCity
@@ -42,7 +43,7 @@
 
     autoCorrect
         拼写自动修正
-    autoFocus
+# autoFocus
         获得焦点
     blurOnSubmit ???????
         文本框在提交的时候失焦
@@ -63,7 +64,7 @@
     defaultValue
     editable
         文本框是否可编辑
-    enablesReturnKeyAutomatically
+# enablesReturnKeyAutomatically
         在文本框内没有文字的时候禁用确认按钮
 # keyboardType
         所有平台都可用：
@@ -98,7 +99,7 @@
         改变后的文字内容会作为参数传递
     onContentSizeChange
 
-    onEndEditing
+# onEndEditing
         文本输入结束后调用此回调函数
     onKeyPress
         当一个键被按下的时候调用此回调
@@ -110,7 +111,7 @@
         内容滚动时持续调用
     onSelectionChange
         光标位置变化时调用，{ nativeEvent: { selection: { start, end } } }
-    onSubmitEditing
+# onSubmitEditing
         当软键盘的 确定/提交 按钮被按下的时候调用此函数
     onTextInput
         使用光标在某位置输入文本时调用
@@ -121,7 +122,7 @@
 # returnKeyType(IOS/Android)
         决定“确定”按钮显示的内容
     
-    secureTextEntry
+# secureTextEntry
         文本框会遮住之前输入的文字
     
     selection

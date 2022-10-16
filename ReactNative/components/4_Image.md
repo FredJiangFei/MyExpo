@@ -28,7 +28,7 @@
         auto
         resize
         scale
-    resizeMode
+# resizeMode
         'cover', 'contain', 'stretch', 'repeat', 'center'
 
     onError
@@ -38,3 +38,9 @@
     onLoadStart
     onPartialLoadiOS
     onProgress
+
+# getSize
+# prefetch()
+    预加载
+# queryCache()
+    查询图片缓存状态

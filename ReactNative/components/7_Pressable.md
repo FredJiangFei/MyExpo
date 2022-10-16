@@ -12,20 +12,21 @@
 
 # Props
 
-    delayLongPress
-        从 onPressIn 触发到 onLongPress 的间隔（毫秒）
-        default: 500
+
     disabled
         禁用按压行为
-    hitSlop
+# hitSlop
         元素能够检测到按压动作的额外距离
     onPress
         onPressOut 之后调用
-    onPressIn
+# onPressIn
         在 onPressOut 和 onPress 之前
-    onPressOut
+# onPressOut
         松开手后调用
     onLongPress
         onPressIn 持续超过 500 毫秒后调用
-    pressRetentionOffset
-         onPressOut 被触发前，view 额外的有效触控距离
+# delayLongPress
+        从 onPressIn 触发到 onLongPress 的间隔（毫秒）
+        default: 500
+# pressRetentionOffset
+        onPressOut 额外的有效触控距离

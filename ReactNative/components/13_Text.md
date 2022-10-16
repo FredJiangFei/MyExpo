@@ -1,10 +1,8 @@
-# Props
-
-    selectable
+# selectable
         是否可以长按选择文本，以便复制和粘贴
-    numberOfLines
+# numberOfLines
         行数
-    ellipsizeMode
+# ellipsizeMode
         head - 从文本内容头部截取显示省略号。例如： "...efg"
         middle - 在文本内容中间截取显示省略号。例如： "ab...yz"
         tail - 从文本内容尾部截取显示省略号。例如： "abcd..."
