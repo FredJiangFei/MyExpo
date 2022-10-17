@@ -30,3 +30,7 @@
         default: 500
 # pressRetentionOffset
         onPressOut 额外的有效触控距离
+
+
+# style
+        style={({ pressed }) => [ baseStyle, { opacity: pressed ? 0.5 : 1} ]}
