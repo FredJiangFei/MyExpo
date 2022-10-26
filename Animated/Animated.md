@@ -12,6 +12,22 @@
     });
 
 # Using the native driver
+    1. Computation = JS thread; Animations by Native OS
+        a. compute
+        b. serialize
+        c. transfer it over the bridge to host OS
+        d. deserialize
+        e run the frame
+    2. Everything by Native OS (useNativeDriver: true)
+        a. serialize whole animation
+        b. Native OS deserialize
+        c. WIN
+
+    different
+        a. no more bridge transfer
+        b. JS thread is free
+        c. smoother animations
+
     原生代码在 UI 线程上执行动画，不会因JS 线程阻塞影响动画执行
 
 # 组合动画
