@@ -15,6 +15,8 @@
         eas build --platform android
         eas build --platform ios
         eas build --platform all
+### Apple Developer Program for build / $99 USD
+### Google Play Store / $25 USD
 
     5. Wait for the build to complete
         eas build:list
